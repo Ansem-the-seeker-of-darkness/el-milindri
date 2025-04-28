@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Canciones - Melendi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .header-image {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .header-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            background-color: #fff;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        audio {
+            width: 100%;
+            margin-top: 10px;
+        }
+        .error-message {
+            color: red;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <!-- Imagen en la parte superior -->
+    <div class="header-image">
+        <img src="https://postimg.cc/WdDcTvCT" alt="Imágen de Melendi">
+    </div>
+
+    <!-- Audio introductorio -->
+    <audio controls>
+        <source src="https://archive.org/download/eleven-labs-2025-04-23-t-11-54-28-rachel-pre-sp-100-s-50-sb-75-se-0-b-m-2/ElevenLabs_2025-04-23T11_54_28_Rachel_pre_sp100_s50_sb75_se0_b_m2.mp3" type="audio/mpeg">
+        Tu navegador no soporta el elemento de audio.
+    </audio>
+
+    <h1>Lista de Canciones - Melendi</h1>
+    <ul>
+        <li>
+            <strong>Melendi - Tu Jardín Con Enanitos</strong>
+            <audio controls class="audio-player" onerror="handleError(this)">
+                <source src="https://ia600500.us.archive.org/27/items/MelendiTuJardinConEnanitos/Melendi%20Tu%20Jardin%20Con%20Enanitos_bajado_de_%28GENTEFLOW.com%29.mp3" type="audio/mp3">
+                Tu navegador no soporta el elemento de audio.
+            </audio>
+            <div class="error-message" style="display: none;">Esta canción no está disponible.</div>
+        </li>
+        <li>
+            <strong>Melendi - Tu Jardín Con Enanitos (Alternativo)</strong>
+            <audio controls class="audio-player" onerror="handleError(this)">
+                <source src="https://archive.org/download/11-melendi-de-repente-desperte_202304/01-melendi-tu_jardin_con_enanitos.mp3" type="audio/mp3">
+                Tu navegador no soporta el elemento de audio.
+            </audio>
+            <div class="error-message" style="display: none;">Esta canción no está disponible.</div>
+        </li>
+        <li>
+            <strong>Melendi - Lágrimas Desordenadas</strong>
+            <audio controls class="audio-player" onerror="handleError(this)">
+                <source src="https://archive.org/download/11-melendi-de-repente-desperte_202304/02-melendi-lagrimas_desordenadas.mp3" type="audio/mp3">
+                Tu navegador no soporta el elemento de audio.
+            </audio>
+            <div class="error-message" style="display: none;">Esta canción no está disponible.</div>
+        </li>
+        <li>
+            <strong>Melendi - Cheque al Portador</strong>
+            <audio controls class="audio-player" onerror="handleError(this)">
+                <source src="https://archive.org/download/11-melendi-de-repente-desperte_202304/03-melendi-cheque_al_portamor.mp3" type="audio/mp3">
+                Tu navegador no soporta el elemento de audio.
+            </audio>
+            <div class="error-message" style="display: none;">Esta canción no está disponible.</div>
+        </li>
+        <li>
+            <strong>Melendi - Aprendiz de Caballero</strong>
+            <audio controls class="audio-player" onerror="handleError(this)">
+                <source src="https://archive.org/download/11-melendi-de-repente-desperte_202304/05-melendi-aprendiz_de_caballero.mp3" type="audio/mp3">
+                Tu navegador no soporta el elemento de audio.
+            </audio>
+            <div class="error-message" style="display: none;">Esta canción no está disponible.</div>
+        </li>
+        <li>
+            <strong>Melendi - Autofotos</strong>
+            <audio controls class="audio-player" onerror="handleError(this)">
+                <source src="https://archive.org/download/11-melendi-de-repente-desperte_202304/06-melendi-autofotos.mp3" type="audio/mp3">
+                Tu navegador no soporta el elemento de audio.
+            </audio>
+            <div class="error-message" style="display: none;">Esta canción no está disponible.</div>
+        </li>
+        <li>
+            <strong>Melendi - Mi Primer Beso</strong>
+            <audio controls class="audio-player" onerror="handleError(this)">
+                <source src="https://archive.org/download/11-melendi-de-repente-desperte_202304/07-melendi-mi_primer_beso.mp3" type="audio/mp3">
+                Tu navegador no soporta el elemento de audio.
+            </audio>
+            <div class="error-message" style="display: none;">Esta canción no está disponible.</div>
+        </li>
+        <li>
+            <strong>Melendi - De Pequeño Fue el Coco</strong>
+            <audio controls class="audio-player" onerror="handleError(this)">
+                <source src="https://archive.org/download/11-melendi-de-repente-desperte_202304/09-melendi-de_pequeno_fue_el_coco.mp3" type="audio/mp3">
+                Tu navegador no soporta el elemento de audio.
+            </audio>
+            <div class="error-message" style="display: none;">Esta canción no está disponible.</div>
+        </li>
+    </ul>
+
+    <script>
+        // Función para manejar errores en los reproductores de audio
+        function handleError(audioElement) {
+            const errorMessage = audioElement.nextElementSibling; // Obtener el mensaje de error
+            if (errorMessage && errorMessage.classList.contains('error-message')) {
+                errorMessage.style.display = 'block'; // Mostrar el mensaje de error
+            }
+        }
+
+        // Obtener todos los reproductores de audio
+        const audioPlayers = document.querySelectorAll('.audio-player');
+
+        // Agregar un evento a cada reproductor
+        audioPlayers.forEach(audio => {
+            audio.addEventListener('play', () => {
+                // Detener todos los demás reproductores
+                audioPlayers.forEach(otherAudio => {
+                    if (otherAudio !== audio && !otherAudio.paused) {
+                        otherAudio.pause();
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
